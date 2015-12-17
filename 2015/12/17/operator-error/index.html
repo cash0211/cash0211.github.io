@@ -7,7 +7,7 @@
     
 
     <title>
-      所有文章 
+      操作符(&quot;&lt;&lt;&quot;)的友元函数重载，访问不到私有属性的问题 | Cash Home 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,15 +16,31 @@
     
     
 
-    <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="所有文章">
-<meta property="og:url" content="http://cash0211.com/archives/index.html">
+    <meta name="description" content="在学习 操作符重载 的过程中，”&amp;lt;&amp;lt;”操作符只能通过友元函数添加重载。实验的过程中遇到一个问题，编译器预编译的时候并没有给出报错，编译之后会出很多奇怪的错误。（1）编译环境：VS2015
+（2）类型说明：— MyString头文件（MyString.h）
+（3）友元函数声明：
+（4）友元函数实现：— 可以看到引用p无法访问 私有属性 m 和 len
+解决办法：
+（1）在MyString">
+<meta property="og:type" content="article">
+<meta property="og:title" content="操作符("<<")的友元函数重载，访问不到私有属性的问题 | Cash Home">
+<meta property="og:url" content="http://cash0211.com/2015/12/17/operator-error/index.html">
 <meta property="og:site_name" content="Cash Home">
-<meta property="og:description">
+<meta property="og:description" content="在学习 操作符重载 的过程中，”&amp;lt;&amp;lt;”操作符只能通过友元函数添加重载。实验的过程中遇到一个问题，编译器预编译的时候并没有给出报错，编译之后会出很多奇怪的错误。（1）编译环境：VS2015
+（2）类型说明：— MyString头文件（MyString.h）
+（3）友元函数声明：
+（4）友元函数实现：— 可以看到引用p无法访问 私有属性 m 和 len
+解决办法：
+（1）在MyString">
+<meta property="og:updated_time" content="2015-12-17T07:16:36.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="所有文章">
-<meta name="twitter:description">
+<meta name="twitter:title" content="操作符("<<")的友元函数重载，访问不到私有属性的问题 | Cash Home">
+<meta name="twitter:description" content="在学习 操作符重载 的过程中，”&amp;lt;&amp;lt;”操作符只能通过友元函数添加重载。实验的过程中遇到一个问题，编译器预编译的时候并没有给出报错，编译之后会出很多奇怪的错误。（1）编译环境：VS2015
+（2）类型说明：— MyString头文件（MyString.h）
+（3）友元函数声明：
+（4）友元函数实现：— 可以看到引用p无法访问 私有属性 m 和 len
+解决办法：
+（1）在MyString">
     
     
     
@@ -142,82 +158,62 @@ classes that you can use:
         <div class="content-wrapper__inner entry">
             
 
+<article class="post-container post-container--single">
 
-   <!-- do nothing -->
-
-
-<div class="main-post-list">
-    <ol class="post-list">
+  <header class="post-header">
     
-    
-    <li>
+    <h1 class="post-title">操作符(&quot;&lt;&lt;&quot;)的友元函数重载，访问不到私有属性的问题</h1>
 
-      <h2 class="post-list__post-title post-title">
-        <a href="/2015/12/17/operator-error/" title="link to 操作符(&quot;&lt;&lt;&quot;)的友元函数重载，访问不到私有属性的问题">操作符(&quot;&lt;&lt;&quot;)的友元函数重载，访问不到私有属性的问题</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2015-12-17" class="post-list__meta--date date">2015-12-17</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2015/12/17/must-be-work-hard/" title="link to 你必须好好努力，才能出人头地">你必须好好努力，才能出人头地</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2015-12-17" class="post-list__meta--date date">2015-12-17</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2015/12/16/hello-world/" title="link to Hello World">Hello World</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2015-12-16" class="post-list__meta--date date">2015-12-16</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-  </ol>
-
-  <hr class="post-list__divider " />
-
-<nav class="pagination" role="navigation">
     
 
-    <span class="pagination__page-number"> 1 / 1</span>
+    <div class="post-meta">
+      <time datetime="2015-12-17" class="post-meta__date date">2015-12-17</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
     
     
-</nav>
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>在学习 操作符重载 的过程中，”&lt;&lt;”操作符只能通过友元函数添加重载。实验的过程中遇到一个问题，编译器预编译的时候并没有给出报错，编译之后会出很多奇怪的错误。<br>（1）编译环境：VS2015</p>
+<p>（2）类型说明：— MyString头文件（MyString.h）</p>
+<p>（3）友元函数声明：</p>
+<p>（4）友元函数实现：— 可以看到引用p无法访问 私有属性 m 和 len</p>
+<p>解决办法：</p>
+<p>（1）在MyString.h中添加using namespace std;（即命名空间）</p>
+<p>（2）添加完 可以访问：</p>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
 
 
-</div>
+  
+</article>
+
+
             <footer class="footer">
 
     <span class="footer__copyright">&copy; 2015-2016. | ~cash~tada~ | 主题: 就不告诉你~ </span>
@@ -245,6 +241,18 @@ classes that you can use:
 
 
     
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
     
     
     <!--kill ie6 -->
