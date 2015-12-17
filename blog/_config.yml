@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Cash Home
+subtitle: 
 description:
-author: John Doe
+author: cash
 language:
 timezone:
 
-# URL
+# URL for CNAME plugin's
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://cash0211.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -68,4 +68,14 @@ theme: huno
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: 
+    github: git@github.com:cash0211/cash0211.github.io.git,master
+    gitcafe: git@gitcafe.com:cash/cash0211.git,gitcafe-pages
+
+# Disqus
+disqus_shortname: letian
+
+plugins:
+- hexo-generator-sitemap
+
