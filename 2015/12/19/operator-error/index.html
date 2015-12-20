@@ -42,11 +42,11 @@
 
 解决办法：
 （1）">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1038746-6350c3711dc78455.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1038746-088c4ecc26dda1b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1038746-9ca348c66ac9d714.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1038746-af91f11cbb23e7da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2015-12-19T15:39:57.000Z">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/ecb1b937gw1ez61ckoz3hj20bo087t9h.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ecb1b937gw1ez61cnyxuyj20aw01c749.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/ecb1b937gw1ez61es8poqj209o05vt97.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ecb1b937gw1ez61cor4xpj209j06pq3f.jpg">
+<meta property="og:updated_time" content="2015-12-20T05:06:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="操作符("<<")的友元函数重载，访问不到私有属性的问题 | Cash Home">
 <meta name="twitter:description" content="在学习 操作符重载的过程中，”&amp;lt;&amp;lt;”操作符只能通过友元函数添加重载。实验的过程中遇到一个问题，编译器预编译的时候并没有给出报错，编译之后会出很多奇怪的错误。
@@ -326,15 +326,15 @@ classes that you can use:
 </blockquote>
 <p>（1）编译环境：VS2015</p>
 <p>（2）类型说明：— MyString头文件（MyString.h）</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1038746-6350c3711dc78455.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">     </p>
+<p><img src="http://ww4.sinaimg.cn/large/ecb1b937gw1ez61ckoz3hj20bo087t9h.jpg" alt="">     </p>
 <p>（3）友元函数声明：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1038746-088c4ecc26dda1b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://ww1.sinaimg.cn/large/ecb1b937gw1ez61cnyxuyj20aw01c749.jpg" alt=""></p>
 <p>（4）友元函数实现：— 可以看到引用p无法访问 私有属性 m 和 len</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1038746-9ca348c66ac9d714.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://ww3.sinaimg.cn/large/ecb1b937gw1ez61es8poqj209o05vt97.jpg" alt=""></p>
 <p>解决办法：</p>
 <p>（1）在MyString.h中添加using namespace std;（即命名空间）</p>
 <p>（2）添加完 可以访问：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1038746-af91f11cbb23e7da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://ww1.sinaimg.cn/large/ecb1b937gw1ez61cor4xpj209j06pq3f.jpg" alt=""></p>
 
   </section>
 
