@@ -7,7 +7,7 @@
     
 
     <title>
-      归档 
+      _指向常量的指针 和 常量指针_ VS _常量指针 和 指针常量_ | Cash Home 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,15 +16,45 @@
     
     
 
-    <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://cash0211.com/archives/index.html">
+    <meta name="description" content="学习C++的过程中，有一个关于指针两种含义的叫法存在争议，这里做一下记录。
+两种含义大致是这样：
+（1）指向常量的指针(对指针本身定义没有要求)，是指针指向一个常量，不能用指针修改 所指对象 的值。 —  *
+（2）指针本身就是一个常量，所以它的值(地址)不能被修改。—   **
+
+1.C++ Primer：
+  （1）叫做“指向常量的指针”，含义同 * 部分解释。
+
+  （2）叫做“常量指针”，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="_指向常量的指针 和 常量指针_ VS _常量指针 和 指针常量_ | Cash Home">
+<meta property="og:url" content="http://cash0211.com/2015/12/20/about-pointer/index.html">
 <meta property="og:site_name" content="Cash Home">
-<meta property="og:description">
+<meta property="og:description" content="学习C++的过程中，有一个关于指针两种含义的叫法存在争议，这里做一下记录。
+两种含义大致是这样：
+（1）指向常量的指针(对指针本身定义没有要求)，是指针指向一个常量，不能用指针修改 所指对象 的值。 —  *
+（2）指针本身就是一个常量，所以它的值(地址)不能被修改。—   **
+
+1.C++ Primer：
+  （1）叫做“指向常量的指针”，含义同 * 部分解释。
+
+  （2）叫做“常量指针”，">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ecb1b937gw1ez61t6xgvtj206t01i746.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/ecb1b937gw1ez61t6tzwbj206h01qt8m.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/ecb1b937gw1ez61t6b0uzj206w01nt8l.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/ecb1b937gw1ez61t5zl9xj206h01qt8m.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/ecb1b937gw1ez61t5naxkj206w01nt8l.jpg">
+<meta property="og:updated_time" content="2015-12-20T05:31:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="归档">
-<meta name="twitter:description">
+<meta name="twitter:title" content="_指向常量的指针 和 常量指针_ VS _常量指针 和 指针常量_ | Cash Home">
+<meta name="twitter:description" content="学习C++的过程中，有一个关于指针两种含义的叫法存在争议，这里做一下记录。
+两种含义大致是这样：
+（1）指向常量的指针(对指针本身定义没有要求)，是指针指向一个常量，不能用指针修改 所指对象 的值。 —  *
+（2）指针本身就是一个常量，所以它的值(地址)不能被修改。—   **
+
+1.C++ Primer：
+  （1）叫做“指向常量的指针”，含义同 * 部分解释。
+
+  （2）叫做“常量指针”，">
     
     
     
@@ -261,100 +291,81 @@ classes that you can use:
         <div class="content-wrapper__inner entry">
             
 
+<article class="post-container post-container--single">
 
-   <!-- do nothing -->
-
-
-<div class="main-post-list">
-    <ol class="post-list">
+  <header class="post-header">
     
-    
-    <li>
+    <h1 class="post-list__post-title post-title">_指向常量的指针 和 常量指针_ VS _常量指针 和 指针常量_</h1>
 
-      <h2 class="post-list__post-title post-title">
-        <a href="/2015/12/20/about-pointer/" title="link to _指向常量的指针 和 常量指针_ VS _常量指针 和 指针常量_">_指向常量的指针 和 常量指针_ VS _常量指针 和 指针常量_</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2015-12-20" class="post-list__meta--date date">2015-12-20</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2015/12/19/operator-error/" title="link to 操作符(&quot;&lt;&lt;&quot;)的友元函数重载，访问不到私有属性的问题">操作符(&quot;&lt;&lt;&quot;)的友元函数重载，访问不到私有属性的问题</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2015-12-19" class="post-list__meta--date date">2015-12-19</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2015/12/17/must-be-work-hard/" title="link to 你必须好好努力，才能出人头地">你必须好好努力，才能出人头地</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2015-12-17" class="post-list__meta--date date">2015-12-17</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2015/12/16/hello-world/" title="link to Hello World">Hello World</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2015-12-16" class="post-list__meta--date date">2015-12-16</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-  </ol>
-
-  <hr class="post-list__divider " />
-
-<nav class="pagination" role="navigation">
     
 
-    <span class="pagination__page-number"> 1 / 1</span>
+    <div class="post-meta">
+      <time datetime="2015-12-20" class="post-meta__date date">2015-12-20</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
     
     
-</nav>
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <blockquote>
+<p>学习C++的过程中，有一个关于指针两种含义的叫法存在争议，这里做一下记录。</p>
+<p>两种含义大致是这样：</p>
+<p>（1）指向常量的指针(对指针本身定义没有要求)，是指针指向一个常量，不能用指针修改 所指对象 的值。 —  *</p>
+<p>（2）指针本身就是一个常量，所以它的值(地址)不能被修改。—   **</p>
+</blockquote>
+<p>1.C++ Primer：</p>
+<p>  （1）叫做“指向常量的指针”，含义同 * 部分解释。</p>
+<p><img src="http://ww1.sinaimg.cn/large/ecb1b937gw1ez61t6xgvtj206t01i746.jpg" alt=""></p>
+<p>  （2）叫做“常量指针”，含义同 **部分解释。</p>
+<p><img src="http://ww2.sinaimg.cn/large/ecb1b937gw1ez61t6tzwbj206h01qt8m.jpg" alt=""></p>
+<p>2.网上某些资料：</p>
+<p>  （1）叫做“常量指针”，“常量”是形容词，”指针”是名词，“常量”用于修饰“指针”，表示一个指向常量的指针。含义同 * 部分解释。</p>
+<p><img src="http://ww4.sinaimg.cn/large/ecb1b937gw1ez61t6b0uzj206w01nt8l.jpg" alt=""></p>
+<p>  （2）叫做“指针常量”，“指针”是形容词，“常量”是名词，“指针”用于修饰“常量”，表示指针是一个常量。含义同 * 部分解释。</p>
+<p><img src="http://ww3.sinaimg.cn/large/ecb1b937gw1ez61t5zl9xj206h01qt8m.jpg" alt=""></p>
+<p>3.所以对于下面的例子：</p>
+<p><img src="http://ww4.sinaimg.cn/large/ecb1b937gw1ez61t5naxkj206w01nt8l.jpg" alt=""></p>
+<pre><code>对于1 ：pip是一个指向常量对象的常量指针
+对于2 ：pip是一个指向常量对象的指针常量
+</code></pre><p>4.结论：</p>
+<p>   遵循C++ Primer的叙述。</p>
+
+  </section>
+
+  
+  
+
+<section class="post-comments">
+
+    <div class="ds-thread" data-thread-key="2015/12/20/about-pointer/"></div>
+
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"cash0211"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script>   
+
+</section>
 
 
-</div>
+</article>
+
+
             <footer class="footer">
 
     <span class="footer__copyright">&copy; 2015-2016. | ~cash~tada~ | 主题: 就不告诉你~ </span>
@@ -382,6 +393,18 @@ classes that you can use:
 
 
     
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
     
     
     <!--kill ie6 -->
