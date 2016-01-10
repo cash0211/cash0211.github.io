@@ -7,7 +7,7 @@
     
 
     <title>
-      操作符(&quot;&lt;&lt;&quot;)的友元函数重载，访问不到私有属性的问题 | Cash Home 
+      锻炼有感 | Cash Home 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,50 +16,25 @@
     
     
 
-    <meta name="description" content="在学习 操作符重载的过程中，”&amp;lt;&amp;lt;”操作符只能通过友元函数添加重载。实验的过程中遇到一个问题，编译器预编译的时候并没有给出报错，编译之后会出很多奇怪的错误。
-
-（1）编译环境：VS2015
-（2）类型说明：— MyString头文件（MyString.h）
-     
-（3）友元函数声明：
-
-（4）友元函数实现：— 可以看到引用p无法访问 私有属性 m 和 len
-
-解决办法：
-（1）">
+    <meta name="description" content="锻炼很久了也感觉到了几个阶段：
+1） 跟描红写字一样，图快，主要因为缓慢的过程比较痛苦的…俯卧撑40个尽量快速做完，拖到越久呼吸感觉越差，越坚持不住。仰卧起坐，54+54，这个倒还好，后面一个呼一口，感觉还不错。
+2） 不管做哪种运动，要到位，注重呼吸，在坚持的过程中不断调整呼吸，每个动作要做到位，尤其要保持节奏感的慢速起伏，这样效果最好，也最累。
+前段时间回宿舍锻炼都生龙活虎的，总感觉不够，要不">
 <meta property="og:type" content="article">
-<meta property="og:title" content="操作符("<<")的友元函数重载，访问不到私有属性的问题 | Cash Home">
-<meta property="og:url" content="http://cash0211.com/2015/12/19/operator-error/index.html">
+<meta property="og:title" content="锻炼有感 | Cash Home">
+<meta property="og:url" content="http://cash0211.com/2016/01/10/feeling-by-exercise/index.html">
 <meta property="og:site_name" content="Cash Home">
-<meta property="og:description" content="在学习 操作符重载的过程中，”&amp;lt;&amp;lt;”操作符只能通过友元函数添加重载。实验的过程中遇到一个问题，编译器预编译的时候并没有给出报错，编译之后会出很多奇怪的错误。
-
-（1）编译环境：VS2015
-（2）类型说明：— MyString头文件（MyString.h）
-     
-（3）友元函数声明：
-
-（4）友元函数实现：— 可以看到引用p无法访问 私有属性 m 和 len
-
-解决办法：
-（1）">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/ecb1b937gw1ez61ckoz3hj20bo087t9h.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/ecb1b937gw1ez61cnyxuyj20aw01c749.jpg">
-<meta property="og:image" content="http://ww3.sinaimg.cn/large/ecb1b937gw1ez61es8poqj209o05vt97.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/ecb1b937gw1ez61cor4xpj209j06pq3f.jpg">
-<meta property="og:updated_time" content="2015-12-20T05:06:11.000Z">
+<meta property="og:description" content="锻炼很久了也感觉到了几个阶段：
+1） 跟描红写字一样，图快，主要因为缓慢的过程比较痛苦的…俯卧撑40个尽量快速做完，拖到越久呼吸感觉越差，越坚持不住。仰卧起坐，54+54，这个倒还好，后面一个呼一口，感觉还不错。
+2） 不管做哪种运动，要到位，注重呼吸，在坚持的过程中不断调整呼吸，每个动作要做到位，尤其要保持节奏感的慢速起伏，这样效果最好，也最累。
+前段时间回宿舍锻炼都生龙活虎的，总感觉不够，要不">
+<meta property="og:updated_time" content="2016-01-10T11:08:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="操作符("<<")的友元函数重载，访问不到私有属性的问题 | Cash Home">
-<meta name="twitter:description" content="在学习 操作符重载的过程中，”&amp;lt;&amp;lt;”操作符只能通过友元函数添加重载。实验的过程中遇到一个问题，编译器预编译的时候并没有给出报错，编译之后会出很多奇怪的错误。
-
-（1）编译环境：VS2015
-（2）类型说明：— MyString头文件（MyString.h）
-     
-（3）友元函数声明：
-
-（4）友元函数实现：— 可以看到引用p无法访问 私有属性 m 和 len
-
-解决办法：
-（1）">
+<meta name="twitter:title" content="锻炼有感 | Cash Home">
+<meta name="twitter:description" content="锻炼很久了也感觉到了几个阶段：
+1） 跟描红写字一样，图快，主要因为缓慢的过程比较痛苦的…俯卧撑40个尽量快速做完，拖到越久呼吸感觉越差，越坚持不住。仰卧起坐，54+54，这个倒还好，后面一个呼一口，感觉还不错。
+2） 不管做哪种运动，要到位，注重呼吸，在坚持的过程中不断调整呼吸，每个动作要做到位，尤其要保持节奏感的慢速起伏，这样效果最好，也最累。
+前段时间回宿舍锻炼都生龙活虎的，总感觉不够，要不">
     
     
     
@@ -300,12 +275,12 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-list__post-title post-title">操作符(&quot;&lt;&lt;&quot;)的友元函数重载，访问不到私有属性的问题</h1>
+    <h1 class="post-list__post-title post-title">锻炼有感</h1>
 
     
 
     <div class="post-meta">
-      <time datetime="2015-12-19" class="post-meta__date date">2015-12-19</time> 
+      <time datetime="2016-01-10" class="post-meta__date date">2016-01-10</time> 
 
       <span class="post-meta__tags tags">
 
@@ -321,20 +296,12 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <blockquote>
-<p>在学习 操作符重载的过程中，”&lt;&lt;”操作符只能通过友元函数添加重载。实验的过程中遇到一个问题，编译器预编译的时候并没有给出报错，编译之后会出很多奇怪的错误。</p>
-</blockquote>
-<p>（1）编译环境：VS2015</p>
-<p>（2）类型说明：— MyString头文件（MyString.h）</p>
-<p><img src="http://ww4.sinaimg.cn/large/ecb1b937gw1ez61ckoz3hj20bo087t9h.jpg" alt="">     </p>
-<p>（3）友元函数声明：</p>
-<p><img src="http://ww1.sinaimg.cn/large/ecb1b937gw1ez61cnyxuyj20aw01c749.jpg" alt=""></p>
-<p>（4）友元函数实现：— 可以看到引用p无法访问 私有属性 m 和 len</p>
-<p><img src="http://ww3.sinaimg.cn/large/ecb1b937gw1ez61es8poqj209o05vt97.jpg" alt=""></p>
-<p>解决办法：</p>
-<p>（1）在MyString.h中添加using namespace std;（即命名空间）</p>
-<p>（2）添加完 可以访问：</p>
-<p><img src="http://ww1.sinaimg.cn/large/ecb1b937gw1ez61cor4xpj209j06pq3f.jpg" alt=""></p>
+    <p>锻炼很久了也感觉到了几个阶段：</p>
+<p>1） 跟描红写字一样，图快，主要因为缓慢的过程比较痛苦的…俯卧撑40个尽量快速做完，拖到越久呼吸感觉越差，越坚持不住。仰卧起坐，54+54，这个倒还好，后面一个呼一口，感觉还不错。</p>
+<p>2） 不管做哪种运动，要到位，注重呼吸，在坚持的过程中不断调整呼吸，每个动作要做到位，尤其要保持节奏感的慢速起伏，这样效果最好，也最累。</p>
+<p>前段时间回宿舍锻炼都生龙活虎的，总感觉不够，要不要再加点量。</p>
+<p>这段时间”不休息”的学习，回宿舍感觉到明显累好多，完全不能调整呼吸，能完成已经很不错了。</p>
+<p>关于锻炼在思想上又有了新的体会，在强烈的身体刺激之后，要持打坐状，闭眼冥想，让自己迅速进入平静的状态，虽然没有学过禅之类的道什么的，但是这种感觉是很奇妙。</p>
 
   </section>
 
@@ -343,7 +310,7 @@ classes that you can use:
 
 <section class="post-comments">
 
-    <div class="ds-thread" data-thread-key="2015/12/19/operator-error/"></div>
+    <div class="ds-thread" data-thread-key="2016/01/10/feeling-by-exercise/"></div>
 
     <script type="text/javascript">
       var duoshuoQuery = {short_name:"cash0211"};
